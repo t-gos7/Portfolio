@@ -91,7 +91,7 @@
   <header id="header" class="header-tops">
     <div class="container" id="tarit">
 
-      <h1><a href="index.html">Tarit Goswami</a></h1>
+      <h1><a href="index.html" id="bigName">Tarit Goswami</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <h2>I'm a passionate <span>Software&nbsp;Developer </span> <br><h4><b style="color:yellow";>IEM</b><b style="color:blue;">Labs</b><b style="color:yellow;">.&nbsp; &nbsp; &nbsp;</b> </h4> </h2>
@@ -554,6 +554,11 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script><nav class="mobile-nav d-lg-none">
+  <script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    $("#bigName").draggable({axis: "x"});
+  </script>
+  
         <ul>
           <li class=""><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
