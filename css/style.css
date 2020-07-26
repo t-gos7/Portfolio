@@ -22,6 +22,14 @@ body::before {
   z-index: -1;
 }
 
+/* For bubbles on mouse hovering */
+i {
+  position: absolute;
+  border-radius:50%;
+  left: 0;
+  top: 0;
+}
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
