@@ -2,6 +2,14 @@
   margin-left:50px;
 }
 
+i {
+  position: absolute;
+  border-radius:50%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -22,14 +30,6 @@ body::before {
   z-index: -1;
 }
 
-/* For bubbles on mouse hovering */
-i {
-  position: absolute;
-  border-radius:50%;
-  left: 0;
-  top: 0;
-}
-
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -47,11 +47,21 @@ a:hover {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 45px;
+  height: 45px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  margin: 0 5px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.15),
+              -3px -3px 5px -1px rgba(255,255,255,0.7);
 }
+
+.fa:hover {
+  transform: scale(0.90);
+}
+
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,13 +131,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 1;
   margin-right: 8px;
-  border-radius: 50%;
+  border-radius: 8px;
   width: 40px;
   height: 40px;
+  transition: transform 0.5s;
 }
 
 #header .social-links a:hover {
-  background: #18d26e;
+  background: #aaa /* #18d26e; */
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+              -0.5px -0.5px 0px rgba(255,255,255,1),
+              0.5px 0.5px 0px rgba(0,0,0,0.15),
+              0px 12px 10px -10px rgba(0,0,0,0.05);
+  /*border: 1px solid rgba(0,0,0,0.01);*/
+  transform: translateY(2px);
 }
 
 @media (max-width: 992px) {
@@ -708,7 +726,7 @@ section .container {
   color: #fff;
   line-height: 1;
   margin-right: 12px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .contact .info-box .social-links a:hover {
