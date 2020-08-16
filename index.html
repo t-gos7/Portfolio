@@ -64,10 +64,10 @@
   /* style for CV button */
   #cv_btn {
     position: relative;
-    /*display: inline-block;*/
+    display: inline-block;
     padding: 12px 36px;
     margin: 10px 0;
-    width: 400px;
+    width: 300px;
     color: #fff;
     text-decoration: none;
     /*text-transform: uppercase;*/
@@ -85,6 +85,8 @@
     text-align: center;
   }
 
+  /* Rippple animation after clicking the button */
+  /* 
   #cv_btn > span {
     position: absolute;
     background: #fff;
@@ -107,6 +109,7 @@
       opacity: 0.5;
     }
   }
+  */
 
 @keyframes sxt-play-anim-hover {
   from {
@@ -381,7 +384,7 @@
         <a 
         href="mailto:tarit.goswami.2@gmail.com?subject=I+am+a+recruiter+from+____&body=Hi+Tarit%2C%0D%0AI+am+____%2C+from+____.+Can+you+send+me+your+resume%3F%0D%0A%0D%0ARegards%2C%0D%0A_______" 
         target="_blank">
-          <div id="cv_btn">Are you a recruiter? Contact me</div>
+          <div id="cv_btn" class="md-4">Are you a recruiter? <br> Contact me</div>
         </a>
       </div>
 
@@ -691,6 +694,7 @@
   
   <!-- script for CV button click -->
   <script type="text/javascript">
+    /* 
     const cvBtn = document.getElementById('cv_btn');
     cvBtn.addEventListener('click', function(e) {
         let x = e.clientX - e.target.offsetLeft;
@@ -704,7 +708,7 @@
         setTimeout(() => {
           ripples.remove()
         }, 1000);
-    })
+    }) */
   </script>
 
 
