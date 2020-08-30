@@ -16,6 +16,7 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
+  user-select: none;
 }
 
 body::before {
