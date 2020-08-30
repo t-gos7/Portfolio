@@ -735,7 +735,7 @@ section .container {
 }
 
 .temp-wrapper {
-  height: 20vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -745,6 +745,8 @@ section .container {
 .temp-wrapper .location {
   justify-content: space-around;
 }
+
+
 
 .contact .php-email-form {
   padding: 30px;
