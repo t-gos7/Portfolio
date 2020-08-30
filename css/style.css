@@ -734,6 +734,18 @@ section .container {
   color: #18d26e;
 }
 
+.temp-wrapper {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(47,150,163), rgb(48, 62, 143));
+}
+
+.temp-wrapper .location {
+  justify-content: space-around;
+}
+
 .contact .php-email-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
