@@ -737,16 +737,22 @@ section .container {
 .temp-wrapper {
   height: 25vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   background: linear-gradient(rgb(47,150,163), rgb(48, 62, 143));
+  padding-left: 5px;
+  border-radius: 10px;
 }
 
 .temp-wrapper .location {
   justify-content: space-around;
 }
 
-
+.weather-head {
+  font-size: 1.5em;
+  text-align: center;
+  padding-left: 3px;
+}
 
 .contact .php-email-form {
   padding: 30px;
