@@ -189,23 +189,23 @@ window.addEventListener('load', ()=> {
         // console.log(data);
         const {temperature, summary, icon} = data.currently;
         // Set DOM Elements from API
-        temperatureDegree.textContent = temperature;
+        temperatureDegree.textContent = temperature + " F";
         temperatureDescription.textContent = summary;
         locationTimezone.textContent = data.timezone;
-        let celcius = (temperature -32) * (9 / 5);
+        // let celcius = (temperature -32) * (9 / 5);
         // Setting icon for weather
         setIcons(icon, document.querySelector(".icon"));
 
         // Change temprature to ferenhite when clicked
-        temperaturSection.addEventListener("click", ()=> {
-          if(temperatureSpan.textContent === "F") {
-            temperatureSpan.textContent = "C";
-            temperatureDegree.textContent = Math.floor(celcius);
-          } else {
-            temperatureSpan.textContent = "F";
-            temperatureDegree.textContent = temperature;
-          }
-        });
+        // temperaturSection.addEventListener("click", ()=> {
+        //   if(temperatureSpan.textContent === "F") {
+        //     temperatureSpan.textContent = "C";
+        //     temperatureDegree.textContent = Math.floor(celcius);
+        //   } else {
+        //     temperatureSpan.textContent = "F";
+        //     temperatureDegree.textContent = temperature;
+        //   }
+        // });
       })
       .catch(err => {
         console.log(err);
