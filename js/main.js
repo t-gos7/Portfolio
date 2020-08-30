@@ -191,7 +191,7 @@ window.addEventListener('load', ()=> {
         // Set DOM Elements from API
         temperatureDegree.textContent = temperature;
         temperatureDescription.textContent = summary;
-        locationTimezone.textContent = data.timeZone;
+        locationTimezone.textContent = data.timezone;
         let celcius = (temperature -32) * (9 / 5);
         // Setting icon for weather
         setIcons(icon, document.querySelector(".icon"));
