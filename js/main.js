@@ -176,8 +176,8 @@ window.addEventListener('load', ()=> {
       long = position.coords.longitude;
       lat = position.coords.latitude;
 
-      // const proxy = 'https://cors-anywhere.herokuapp.com';
-      const apiquery = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`;
+      const proxy = 'https://cors-anywhere.herokuapp.com';
+      const apiquery = `${proxy}/https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`;
 
       // fetch the weather data according to the link: https://rapidapi.com/weatherbit/api/weather 
       fetch(apiquery)
