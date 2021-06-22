@@ -22,7 +22,7 @@ body {
 body::before {
     content: "";
     position: fixed;
-    background: #040404 url("../img/aws.png") top left no-repeat;
+    background: #040404 url("../img/bg14.svg") top left no-repeat;
     filter: blur(1px);
     -webkit-filter: blur(1px);
     background-size: cover;
