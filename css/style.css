@@ -4,7 +4,7 @@
 
 i {
     position: absolute;
-    border-radius: 50%;
+    border-radius: 80%;
     left: 0;
     top: 0;
     overflow: hidden;
@@ -469,6 +469,10 @@ section .container {
 
 .about-me .content p:last-child {
     margin-bottom: 0;
+}
+
+.about-me img {
+    border-radius: 70%;
 }
 
 
