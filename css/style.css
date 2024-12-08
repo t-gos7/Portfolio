@@ -462,17 +462,30 @@ section .container {
 }
 
 .about-me .content ul i {
-    font-size: 20px;
+    font-size: 28px;
     padding-right: 2px;
-    color: #18d26e;
+    color: #ff9900;
 }
 
 .about-me .content p:last-child {
     margin-bottom: 0;
 }
 
+.about-me .content h3 i {
+    font-size: 50px;
+    padding-right: 2px;
+    color: #ff9900;
+    position: relative;
+    margin-left: 40px;
+}
+
 .about-me img {
     border-radius: 70%;
+}
+
+.about-me ul li i {
+    line-height: 1;
+    position: relative;
 }
 
 
@@ -649,6 +662,14 @@ section .container {
     top: 0;
     background: #18d26e;
     border: 2px solid #18d26e;
+}
+
+.resume .container .resume-title i {
+    font-size: 28px;
+    padding-right: 2px;
+    color: #eca730;
+    position: relative;
+    margin-left: 10px;
 }
 
 
